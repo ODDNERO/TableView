@@ -12,6 +12,7 @@
 		CE4E62A22BFF1613009356F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE4E62A12BFF1613009356F2 /* Base */; };
 		CE4E62A42BFF1615009356F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4E62A32BFF1615009356F2 /* Assets.xcassets */; };
 		CE4E62A72BFF1615009356F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE4E62A62BFF1615009356F2 /* Base */; };
+		CE51077E2C4C1A1F0055128E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE51077D2C4C1A1F0055128E /* SnapKit */; };
 		CE6A917B2BFF5F8000B84723 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A917A2BFF5F8000B84723 /* SettingTableViewController.swift */; };
 		CE7F24EA2BFF51BC003D3DB4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F24E92BFF51BC003D3DB4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE51077E2C4C1A1F0055128E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = TableView;
+			packageProductDependencies = (
+				CE51077D2C4C1A1F0055128E /* SnapKit */,
+			);
 			productName = TableView;
 			productReference = CE4E62972BFF1613009356F2 /* TableView.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +119,9 @@
 				Base,
 			);
 			mainGroup = CE4E628E2BFF1613009356F2;
+			packageReferences = (
+				CE51077C2C4C1A1F0055128E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CE4E62982BFF1613009356F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE51077C2C4C1A1F0055128E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE51077D2C4C1A1F0055128E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE51077C2C4C1A1F0055128E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE4E628F2BFF1613009356F2 /* Project object */;
 }
